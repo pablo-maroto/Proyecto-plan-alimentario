@@ -1,0 +1,7 @@
+{
+  "name": "planAlimentario",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
