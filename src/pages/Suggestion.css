@@ -1,0 +1,30 @@
+.ListFoods{
+    text-align: center;
+    align-content: center;
+    position: relative;
+    padding: 1px;
+}
+
+.boton{
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    margin-top: 130px;
+   
+    
+}
+.select{
+    opacity: 80%;
+    margin-top: 150px;
+    position: absolute;
+    max-width: 100% !important;
+}
+.text{
+    padding: 45px;
+    background-color: #ccffcc;
+    color: black !important;
+}
+.color{
+    color: white;
+}
+
