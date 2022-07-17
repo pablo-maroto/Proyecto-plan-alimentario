@@ -1,7 +1,7 @@
-import {  IonItem, IonLabel, IonList, IonSelect, IonSelectOption } from '@ionic/react';
-
+import {  IonDatetime, IonItem, IonLabel, IonList, IonSelect, IonSelectOption } from '@ionic/react';
 import './Suggestion.css';
-import './FunctionDate.js';
+import '../components/FunctionDate';
+import { DatePicker } from '@material-ui/pickers';
 
 // Agregar fecha al inicio en esta pantalla.
 

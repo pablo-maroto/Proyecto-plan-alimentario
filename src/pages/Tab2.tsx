@@ -1,6 +1,6 @@
 
 import React, { useRef } from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,IonButtons, IonButton, IonDatetime, IonItem, IonLabel, } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,IonButtons, IonButton, IonDatetime, IonItem, IonLabel} from '@ionic/react';
 import { useHistory } from 'react-router-dom';
 import './Tab2.css';
 
@@ -21,6 +21,8 @@ const Tab2: React.FC = () => {
      history.push('/Suggestion')
      window.location.reload();
    }
+   
+   
   return (
   
     <IonPage>
@@ -34,7 +36,7 @@ const Tab2: React.FC = () => {
           <IonButtons slot="buttons">
             <IonButton color="danger" onClick={reset}>Reiniciar</IonButton>
             <IonButton color="primary" onClick={cancel}>Cancelar</IonButton>
-            <IonButton color="primary" onClick={confirm} >Confirmar</IonButton>
+            <IonButton className='color' onClick={confirm} >Confirmar</IonButton>
           </IonButtons>
         </IonDatetime>
        
@@ -44,12 +46,3 @@ const Tab2: React.FC = () => {
 };
 
 export default Tab2;
-
-//confirm(closeOverlay?: boolean) => Promise<void>
-//import { useHistory } from 'react-router-dom';
-// const MyComponent: React.FC = () => {
-//   const history = useHistory();
-//   ...
-//   history.push('/my/url');
-//   ...
-// export default MyComponent;

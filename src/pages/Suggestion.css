@@ -20,11 +20,17 @@
     max-width: 100% !important;
 }
 .text{
-    padding: 45px;
+    padding: 35px;
     background-color: #ccffcc;
     color: black !important;
+    font-size: xx-large !important;
+    font-family: 'Times New Roman', Times, serif !important ;
 }
 .color{
-    color: white;
+    color: #2dd36f;
+}
+.color1{
+    border-radius: 5px;
+    font-size: x-large;
 }
 

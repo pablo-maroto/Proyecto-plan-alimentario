@@ -1,21 +1,13 @@
 import { Redirect, Route } from 'react-router-dom';
-import {
-  IonApp,
-  IonIcon,
-  IonLabel,
-  IonRouterOutlet,
-  IonTabBar,
-  IonTabButton,
-  IonTabs,
-  setupIonicReact
-} from '@ionic/react';
+import { IonApp,IonIcon,IonLabel,IonRouterOutlet,IonTabBar,IonTabButton,IonTabs,      setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { calendar, construct, home } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
-import React, {useState} from 'react';
-import { IonDatetime } from '@ionic/react';
+import Suggestion from './pages/Suggestion';
+import ConfiguracionMenu from './pages/ConfiguracionMenu';
+
 
 
 /* Core CSS required for Ionic components to work properly */
@@ -36,13 +28,8 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import Suggestion from './pages/Suggestion';
-
-
-
 
 setupIonicReact();
-
 
 
 const App: React.FC = () => (
@@ -52,9 +39,15 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
+
+        <Route exact path="/ConfiguracionMenu">
+            <ConfiguracionMenu />
+            </Route>
+
           <Route exact path="/tab1">
             <Tab1 />
           </Route>
+
           <Route exact path="/tab2">
             <Tab2 />
           </Route>
@@ -62,13 +55,16 @@ const App: React.FC = () => (
           <Route path="/tab3">
             <Tab3 />
           </Route>
+
           <Route exact path="/">
             <Redirect to="/tab1" />
           </Route>
+
           <Route exact path="/Suggestion">
             <Suggestion />
             </Route>
-        </IonRouterOutlet>
+
+         </IonRouterOutlet>
         <IonTabBar slot="bottom">
           <IonTabButton tab="tab1" href="/tab1">
             <IonIcon icon={home} />
