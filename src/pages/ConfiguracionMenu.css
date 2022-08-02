@@ -1,5 +1,17 @@
-.my-custom-menu{
+
+.BotonMenu{
+    color: white;
+    width: 100px;
+    font-size: xx-large;
+}
+
+.translucent{
     text-align: center;
-    color: aqua;
-    background-color: brown;
+    color:white ;
+    font-size: xx-large;
+    
+}
+.MensajeMenu{
+    color: black;
+    
 }

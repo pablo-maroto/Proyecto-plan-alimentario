@@ -1,12 +1,13 @@
 import { Redirect, Route } from 'react-router-dom';
 import { IonApp,IonIcon,IonLabel,IonRouterOutlet,IonTabBar,IonTabButton,IonTabs,      setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { calendar, construct, home } from 'ionicons/icons';
+import { calendar, construct, home, menu } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
-import Tab3 from './pages/Tab3';
 import Suggestion from './pages/Suggestion';
 import ConfiguracionMenu from './pages/ConfiguracionMenu';
+
+
 
 
 
@@ -40,9 +41,7 @@ const App: React.FC = () => (
       <IonTabs>
         <IonRouterOutlet>
 
-        <Route exact path="/ConfiguracionMenu">
-            <ConfiguracionMenu />
-            </Route>
+       
 
           <Route exact path="/tab1">
             <Tab1 />
@@ -52,15 +51,15 @@ const App: React.FC = () => (
             <Tab2 />
           </Route>
       
-          <Route path="/tab3">
-            <Tab3 />
+          <Route path="/ConfiguracionMenu">
+            <ConfiguracionMenu />
           </Route>
 
           <Route exact path="/">
             <Redirect to="/tab1" />
           </Route>
 
-          <Route exact path="/Suggestion">
+          <Route exact path="/Suggestion"> 
             <Suggestion />
             </Route>
 
@@ -74,9 +73,9 @@ const App: React.FC = () => (
             <IonIcon icon={calendar} />
             <IonLabel>Calendario</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
-            <IonIcon icon={construct} />
-            <IonLabel>Configuración</IonLabel>
+          <IonTabButton tab="ConfiguracionMenu" href="/ConfiguracionMenu">
+            <IonIcon icon={menu} />
+            <IonLabel>Menu</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>

@@ -1,23 +1,24 @@
 .ListFoods{
     text-align: center;
     align-content: center;
-    position: relative;
-    padding: 1px;
+    position: static;
+ 
 }
+
 
 .boton{
     margin-left: auto;
     margin-right: auto;
-    width: 350px;
-    margin-top: 130px;
-   
-    
+    width: 250px;
+    padding-bottom: 150px;
 }
 .select{
+    color: #1e1e1e;
     opacity: 80%;
     margin-top: 150px;
     position: absolute;
     max-width: 100% !important;
+    
 }
 .text{
     padding: 35px;
@@ -25,6 +26,7 @@
     color: black !important;
     font-size: xx-large !important;
     font-family: 'Times New Roman', Times, serif !important ;
+    
 }
 .color{
     color: #2dd36f;
@@ -34,3 +36,17 @@
     font-size: x-large;
 }
 
+
+.DateBox{
+    color: rgb(255, 255, 255);
+    border-style: ridge;
+    max-width: 350px;
+    height: auto;
+    padding: 10px;
+    background-color: #1e1e1e;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    
+   
+}
